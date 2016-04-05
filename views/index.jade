@@ -1,0 +1,82 @@
+extends layout
+block content
+    canvas#draw(keepalive ='true', width = '900', height = '500', style = 'position: absolute; top:12%; left:15%' )
+    script( type="text/paperscript", src="javascripts/draw.js", canvas="draw")
+
+    body
+
+        div(id="userCountWrapper", style="opacity:0") artists:
+            span(id="userCount")
+
+    img#Logo(src='/images/logo1.png', style = 'position: absolute; top:0%; left:40%')
+
+    table(border='2', style='position: absolute; top: 18%; left: 2%;')
+
+        tr
+            td
+                button#Pencil(style='width: 45px; height: 45px;', type='submit', onclick='javascript:tool7.activate();')
+
+            td
+                button#Era(style='width: 45px; height: 45px;', type='submit', onclick='javascript:tool6.activate();')
+
+        tr
+            td
+                button#Line( style='width: 45px; height: 45px;', type='submit', onclick='javascript:tool3.activate();')
+
+            td
+                button#Rand_cir(style='width: 45px; height: 45px;', type='submit', onclick='javascript:tool4.activate();')
+
+
+        tr
+            td
+                button#Circle(style='width: 45px; height: 45px;', type='submit', onclick='javascript:tool1.activate();')
+
+
+            td
+                button#Rectangle(style='width: 45px; height: 45px;', type='submit', onclick='javascript:tool2.activate();')
+        tr
+            td
+                button#SLine(style='width: 45px; height: 45px;', type='submit', onclick='javascript:tool5.activate();')
+
+            td
+                button#Tbox(style='width: 45px; height: 45px;', type='submit', onclick='javascript:tool8.activate();')
+
+
+    table(border='2', style='position: absolute; top: 92%; left: 20%;')
+        tr
+
+            td
+             button#Black(style='width: 35px; height: 35px; background-color: black;', type='submit', onclick= 'javascript:color = "black"') 
+            td
+             button#Blue(style='width: 35px; height: 35px; background-color: blue;', type='submit', onclick= 'javascript:color = "blue"')
+            td
+             button#Yellow(style='width: 35px; height: 35px; background-color: yellow;', type='submit', onclick= 'javascript:color = "yellow"') 
+            td
+             button#Red(style='width: 35px; height: 35px; background-color: red;', type='submit', onclick= 'javascript:color = "red"') 
+        
+
+            td
+                button#Green(style='width: 35px; height: 35px; background-color: green;', type='submit', onclick= 'javascript:color = "green"')
+            td
+                button#Purple(style='width: 35px; height: 35px; background-color: purple;', type='submit', onclick= 'javascript:color = "purple"')
+            td
+                button#Orange(style='width: 35px; height: 35px; background-color: orange;', type='submit', onclick= 'javascript:color = "orange"')
+            td
+                button#Grey(style='width: 35px; height: 35px; background-color: grey;', type='submit',onclick= 'javascript:color = "grey"')
+            td
+                button#Random(style='width: 35px; height: 35px;',onclick= 'javascript:color = randomColor();')
+        
+
+
+    
+
+                            
+        
+
+                    
+
+                          
+
+                    
+
+                          
